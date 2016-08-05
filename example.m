@@ -6,7 +6,7 @@
 % load dataset
 dataset = '1';
 calcium_train = csvread([dataset '.train.calcium.csv']);
-spike_train = xlsread([dataset '.train.spikes.csv']);
+spike_train = csvread([dataset '.train.spikes.csv']);
 
 % plot example neuron
 figure
