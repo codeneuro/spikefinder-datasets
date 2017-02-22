@@ -5,8 +5,8 @@
 
 % load dataset
 dataset = '1';
-calcium_train = csvread([dataset '.train.calcium.csv']);
-spike_train = csvread([dataset '.train.spikes.csv']);
+calcium_train = csvread([dataset '.train.calcium.csv'],1,0); % skip first row (column headers)
+spike_train = csvread([dataset '.train.spikes.csv'],1,0);    % skip first row (column headers)
 
 % plot example neuron
 figure
